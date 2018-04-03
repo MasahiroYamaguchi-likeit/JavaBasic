@@ -62,19 +62,19 @@ public class PTra04_05 {
 			}
 			if ( myHand==0 && cpuHand==1 ) {
 				System.out.println("WIN！");
-				break;
+				winFlg = true;
 
 			}else if ( myHand==1 && cpuHand>1 ) {
 				System.out.println("WIN！");
-				break;
+				winFlg = true;
 
 			}else if ( myHand>1 && cpuHand==0 ){
 				System.out.println("WIN！");
-				break;
+				winFlg = true;
 
 			}else {
 				System.out.println("残念！もう一度！");
-				continue;
+
 			}
 
 
