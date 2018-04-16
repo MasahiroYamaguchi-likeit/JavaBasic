@@ -55,8 +55,8 @@ public class PTra08_05 {
 	 */
 
 	public static double quadrangle(double width, double height) {
-		double num1 = width * height;
-		return num1;
+		return width * height;
+
 	}
 
 	/*
@@ -70,9 +70,9 @@ public class PTra08_05 {
 	 */
 
 	public static double triangle(double width, double height) {
-		double num2 =width * height /2;
+		return width * height /2;
 
-		return num2;
+
 
 	}
 

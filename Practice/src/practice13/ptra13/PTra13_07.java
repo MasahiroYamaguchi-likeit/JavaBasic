@@ -44,13 +44,16 @@ public class PTra13_07 {
 		 */
 
 		while(true) {
+			System.out.println(spHero.getName() + "の攻撃");
 			if(enemy.damage(spHero.attack())){
+				System.out.println(enemy.getName() + "は倒れた・・・\n");
 				System.out.println(spHero.getName() + "は" + enemy.getName() + "との戦闘に勝利した");
 				break;
 			}
 
-
+			System.out.println(enemy.getName() + "の攻撃");
 			if (spHero.damage(enemy.attack())) {
+				System.out.println(spHero.getName() + "は倒れた・・・\n");
 				System.out.println(enemy.getName() + "は" + spHero.getName() + "との戦闘に勝利した");
 				break;
 			}

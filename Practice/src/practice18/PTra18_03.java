@@ -44,19 +44,18 @@ public class PTra18_03 {
 			}
 		} catch (FileNotFoundException e) {
 			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
+			System.out.println("ファイルが見つかりません");
 		}
 
-		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
-		for (int i = list.size() - 1; i >= 0; i--) {
-			if (list.get(i).getTeam().equals("レアル・マドリード")) {
+		// ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
+		for (int i = list.size() - 1; 0 < i; i--) {
+			Player player = list.get(i);
+			String team = player.getTeam();
+			if ("レアル・マドリード".equals(team) || "バルセロナ".equals(team)) {
 				list.remove(i);
 			}
-			if (list.get(i).getTeam().equals("バルセロナ")) {
-				list.remove(i);
-			}
-
 		}
+
 
 		// ★ 削除後のArrayListの中身を全件出力してください
 

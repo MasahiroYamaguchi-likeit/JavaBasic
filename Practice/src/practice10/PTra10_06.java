@@ -6,6 +6,8 @@ package practice10;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
+import java.util.Scanner;
+
 public class PTra10_06 {
 
 	/*
@@ -19,29 +21,22 @@ public class PTra10_06 {
 		 * 各carインスタンスのrunメソッドを実行して、それぞれ「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください。
 		 */
 
+		Scanner scanner = new Scanner(System.in);
 		Car[] cars = new Car[3];
+		for (int i = 0; i < cars.length; i++) {
+			System.out.println("------------------------------------");
+			System.out.println((i + 1) + "台目");
+			cars[i] = new Car();
 
-		Car car1 = new Car();
+			System.out.println("シリアル№、車体カラー、ガソリン量をカンマ区切りで入力してください");
+			String line = scanner.nextLine();
 
-		car1.serialNo = 10000;
-		car1.color = "Red";
-		car1.gasoline = 50;
+			String[] inputInfo = line.split(",");
 
-		Car car2 = new Car();
-
-		car2.serialNo = 114514;
-		car2.color = "Brue";
-		car2.gasoline = 30;
-
-		Car car3 = new Car();
-
-		car3.serialNo = 194964;
-		car3.color = "Green";
-		car3.gasoline = 40;
-
-		cars[0] = car1;
-		cars[1] = car2;
-		cars[2] = car3;
+			cars[i].serialNo = Integer.parseInt(inputInfo[0]);
+			cars[i].color = inputInfo[1];
+			cars[i].gasoline = Integer.parseInt(inputInfo[2]);
+		}
 
 		final int distance = 300;
 

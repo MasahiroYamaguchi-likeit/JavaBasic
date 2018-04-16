@@ -16,7 +16,7 @@ public class PTra07_04 {
 		// ★ 配列trumpに、[1,2,3,4,5,・・・・,52] を代入してください
 
 		for(int i =0; i<trump.length; i++) {
-			trump[i]=i;
+			trump[i]=i+1;
 		}
 
 		// ★ 0～51の中からランダムで値を取得して、変数indexに代入してください

@@ -47,38 +47,48 @@ public class PTra04_05 {
 			if (cpuHand == 0) {
 				System.out.println("グー！");
 
-
+				// 勝ち負け判定
+				if (myHand == 2) {
+					System.out.println("あなたの勝ち！");
+					winFlg = true;
+				} else if (myHand == 1) {
+					System.out.println("あなたの負け！もう一勝負！");
+				} else if (myHand == 0) {
+					System.out.println("あいこ！もう一勝負！");
+				} else {
+					System.out.println("判定出来ない！もう一回！");
+				}
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
 
-
+				// 勝ち負け判定
+				if (myHand == 0) {
+					System.out.println("あなたの勝ち！");
+					winFlg = true;
+				} else if (myHand == 2) {
+					System.out.println("あなたの負け！もう一勝負！");
+				} else if (myHand == 1) {
+					System.out.println("あいこ！もう一勝負！");
+				} else {
+					System.out.println("判定出来ない！もう一回！");
+				}
 
 			} else {
 				System.out.println("パー！！");
 
-
-
+				// 勝ち負け判定
+				if (myHand == 1) {
+					System.out.println("あなたの勝ち！");
+					winFlg = true;
+				} else if (myHand == 0) {
+					System.out.println("あなたの負け！もう一勝負！");
+				} else if (myHand == 2) {
+					System.out.println("あいこ！もう一勝負！");
+				} else {
+					System.out.println("判定出来ない！もう一回！");
+				}
 			}
-			if ( myHand==0 && cpuHand==1 ) {
-				System.out.println("WIN！");
-				winFlg = true;
-
-			}else if ( myHand==1 && cpuHand>1 ) {
-				System.out.println("WIN！");
-				winFlg = true;
-
-			}else if ( myHand>1 && cpuHand==0 ){
-				System.out.println("WIN！");
-				winFlg = true;
-
-			}else {
-				System.out.println("残念！もう一度！");
-
-			}
-
-
-
 		}
 	}
 }

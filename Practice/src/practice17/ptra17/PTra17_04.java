@@ -11,24 +11,20 @@ public class PTra17_04 {
 
 		String str = "スッキリわかるJava入門";
 
-		MessageSlowly(str, 500);
-	}
-	/*
-	 * ★ strに入っている文字列を1文字ずつゆっくり表示させるプログラムを完成させてください
-	 * ※ Thread.sleep を使用すること
-	 */
+		/*
+		 * ★ strに入っている文字列を1文字ずつゆっくり表示させるプログラムを完成させてください
+		 * ※ Thread.sleep を使用すること
+		 */
 
-
-	private static void MessageSlowly(String language, int slow) {
-		char[] array = language.toCharArray();
-		for(int i = 0; i <language.length(); i++) {
-			System.out.println(array[i]);
+		char[] array = str.toCharArray();
+		for (char ar : array) {
+			System.out.println(ar);
 			try {
-				Thread.sleep(slow);
-			}catch(InterruptedException e){
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
 
 			}
-		// TODO 自動生成されたメソッド・スタブ
+			// TODO 自動生成されたメソッド・スタブ
 		}
 	}
 }

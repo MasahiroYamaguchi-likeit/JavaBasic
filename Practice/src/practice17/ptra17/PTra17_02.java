@@ -28,9 +28,9 @@ public class PTra17_02 {
 		 * ★ 適切な修正を行い、コンパイルエラーをなくしてください
 		 */
 
-			String line = ThrowExceptionUtil.inputValue();
+		String line = ThrowExceptionUtil.inputValue();
 
-			System.out.println(line);
+		System.out.println(line);
 
 	}
 }

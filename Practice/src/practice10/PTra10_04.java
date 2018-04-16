@@ -29,13 +29,7 @@ public class PTra10_04 {
 		// ★ usersのサイズ分繰り返す制御構文を記述してください
 		//----------- ループ start
 		for( int i =0; i < users.length; i++) {
-			users[i] = new User();
-
-			int count = 1;
-
-			count += i;
-
-			System.out.println( count+"人目の情報を入力します");		/* ##には、カウントを入れてください */
+			System.out.println(( i+1 )+"人目の情報を入力します");		/* ##には、カウントを入れてください */
 
 			System.out.println("ユーザID（数字）、 ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 
@@ -50,7 +44,7 @@ public class PTra10_04 {
 
 			// ★ 配列にした値を、users[カウント]の各フィールドに代入してください
 			// ★ ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-
+			users[i] = new User();
 			users[i].userId = Integer.parseInt(splitLine[0]);
 			users[i].userNm = splitLine[1];
 			users[i].mail = splitLine[2];

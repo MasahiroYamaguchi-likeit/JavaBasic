@@ -30,6 +30,7 @@ public class PTra05_04 {
 
 			String line = scanner.nextLine();
 
+			co = false;
 
 			switch(line) {
 				case "0":
@@ -61,6 +62,8 @@ public class PTra05_04 {
 					co = false;
 					break;
 				default :
+					System.out.println("正しい値を入力してください");
+					co = true;
 
 			}
 		}

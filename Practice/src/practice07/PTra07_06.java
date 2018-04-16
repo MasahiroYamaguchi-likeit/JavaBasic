@@ -27,6 +27,8 @@ public class PTra07_06 {
 			}
 
 		}
-		System.out.println(num/count);
+		System.out.println("合計値：" + num);
+		System.out.println("値数：" + count);
+		System.out.println("平均値："+(num/count));
 	}
 }

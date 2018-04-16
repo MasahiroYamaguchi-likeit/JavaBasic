@@ -24,7 +24,9 @@ public class PTra02_10 {
 		int coffee1 = coffee*2 ;
 		coffee = coffee1 + coffee1 * 8 / 100 ;
 		snack = snack + snack *8 / 100;
+		int total = coffee+snack;
 
-		System.out.println(coffee+snack);
+
+		System.out.println(moneyInHand - total);
 	}
 }

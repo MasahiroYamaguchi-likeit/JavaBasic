@@ -60,11 +60,11 @@ public class PTra18_02 {
 			}
 		} catch (FileNotFoundException e) {
 			// TODO 自動生成された catch ブロック
-			e.printStackTrace();
+			System.out.println("ファイルが見つかりません");
 		}
 
 		for (Player play : list) {
-			System.out.println(play.toString());
+			System.out.println(play);
 		}
 	}
 }

@@ -16,7 +16,7 @@ public class PTra07_02 {
 		// ★ 配列arrayに [1,2,3,4,5,6,7,・・・・,998,999,1000] を代入してください
 
 		for(int i =0; i < array.length; i++) {
-			array[i] = i;
+			array[i] = i+1;
 			}
 
 		// ★ 変数arrayに格納されている値を前から順番に全て表示してください
